@@ -44,9 +44,3 @@ variable "tags" {
   type = list(string)
   description = "For Identification ?"
 }
-
-variable "allow_stopping_for_update" {
-  default = true
-  type = bool
-  description = "Allow Compute Engine Stop for Update"
-}

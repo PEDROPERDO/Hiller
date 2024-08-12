@@ -1,6 +1,3 @@
-# Terraform Fundamentals
-# Infrastructure as Code with Terraform
-
 resource "google_compute_instance" "terracompute" {
   # Google Compute Engine
   name = var.compute_name
@@ -27,6 +24,6 @@ resource "google_compute_instance" "terracompute" {
     }
   }
 
-  allow_stopping_for_update = var.allow_stopping_for_update
+  allow_stopping_for_update = true
 
 }
